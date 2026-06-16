@@ -1,2 +1,818 @@
 # dilsh9810.github.io
 Portfolio Quality Assurance Engineer
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilshika Netthikumarage | QA Automation Engineer & Business Analyst</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background-color: #0b1329;
+            background-image: radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
+                              radial-gradient(circle at 20% 80%, rgba(129, 140, 248, 0.1) 0%, transparent 50%);
+        }
+        /* Custom Terminal Typing Effect */
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        .terminal-cursor {
+            animation: blink 1s infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#0b1329] text-slate-200 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b1329]/80 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-extrabold tracking-wider text-white">DILSHIKA<span class="text-brand-500">.</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+                <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#deployment" class="hover:text-white transition-colors">Server Hub</a>
+                <a href="#remote-readiness" class="hover:text-white transition-colors">Remote Setup</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#contact" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all shadow-lg shadow-brand-500/20">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 lg:py-32 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-brand-500/10 border border-brand-500/30 px-3 py-1 rounded-full text-brand-400 text-xs font-semibold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span>Available for Remote Opportunities</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Dilshika <br>Netthikumarage
+                    </h1>
+                    <p class="text-xl sm:text-2xl font-semibold gradient-text">
+                        QA Automation Engineer & Business Analyst
+                    </p>
+                    <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl">
+                        Detail-oriented Software QA professional with 3 years of hands-on experience driving manual and automated web/mobile quality initiatives. Experienced in bridging technical delivery with client expectations.
+                    </p>
+                    <!-- Quick Specs -->
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <div class="bg-slate-800/50 border border-slate-700/50 px-4 py-2 rounded-lg flex items-center space-x-2 text-sm">
+                            <i class="fa-solid fa-laptop-code text-brand-400"></i>
+                            <span class="font-medium">3 Years Experience</span>
+                        </div>
+                        <div class="bg-slate-800/50 border border-slate-700/50 px-4 py-2 rounded-lg flex items-center space-x-2 text-sm">
+                            <i class="fa-solid fa-certificate text-amber-400"></i>
+                            <span class="font-medium">ISTQB Certified</span>
+                        </div>
+                        <div class="bg-slate-800/50 border border-slate-700/50 px-4 py-2 rounded-lg flex items-center space-x-2 text-sm">
+                            <i class="fa-solid fa-bolt text-emerald-400"></i>
+                            <span class="font-medium">Playwright / Python Specialist</span>
+                        </div>
+                    </div>
+                    <!-- Action Buttons -->
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#projects" class="px-6 py-3 bg-brand-600 hover:bg-brand-500 text-white font-medium rounded-lg shadow-lg shadow-brand-500/20 transition-all">
+                            View Test Projects
+                        </a>
+                        <!-- Download Resume PDF using verbatim file name -->
+                        <a href="Dilshika_Netthikumarage_Resume.pdf" download="Dilshika_Netthikumarage_Resume.pdf" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-medium rounded-lg border border-slate-700 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-file-pdf text-red-400"></i> Download Resume PDF
+                        </a>
+                    </div>
+                </div>
+                <!-- Visual Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-[360px] aspect-square bg-gradient-to-br from-brand-500/10 to-indigo-500/10 border border-slate-700 rounded-2xl p-6 flex flex-col justify-between shadow-2xl relative overflow-hidden group">
+                        <!-- Tech pattern backdrop -->
+                        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                        
+                        <div class="flex justify-between items-start z-10">
+                            <div class="flex gap-1.5">
+                                <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                                <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+                                <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                            </div>
+                            <span class="text-xs font-mono text-slate-500">qa-config.json</span>
+                        </div>
+                        
+                        <div class="space-y-4 z-10 py-6">
+                            <code class="text-xs sm:text-sm text-brand-400 font-mono block">
+                                <span class="text-indigo-400">const</span> engineer = {<br>
+                                &nbsp;&nbsp;name: <span class="text-amber-300">"Dilshika"</span>,<br>
+                                &nbsp;&nbsp;focus: [<span class="text-emerald-300">"STLC"</span>, <span class="text-emerald-300">"BDD"</span>, <span class="text-emerald-300">"Automation"</span>],<br>
+                                &nbsp;&nbsp;uptime_target: <span class="text-emerald-400">1.00</span>,<br>
+                                &nbsp;&nbsp;timezone: <span class="text-amber-300">"IST / Global Remote"</span><br>
+                                };
+                            </code>
+                        </div>
+
+                        <div class="border-t border-slate-800 pt-4 flex items-center justify-between z-10">
+                            <span class="text-xs text-slate-500">Playwright &bull; Selenium &bull; API</span>
+                            <span class="text-xs text-emerald-400 font-bold flex items-center gap-1">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Active
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 py-16">
+
+        <!-- Metrics section -->
+        <section id="metrics" class="grid grid-cols-2 md:grid-cols-4 gap-6 bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 sm:p-8 backdrop-blur">
+            <div class="text-center p-4 border-r border-slate-800 last:border-r-0">
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">3+</p>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Years QA Experience</p>
+            </div>
+            <div class="text-center p-4 border-r border-slate-800 last:border-r-0">
+                <p class="text-3xl sm:text-4xl font-extrabold text-brand-400">50%</p>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Test Efficiency Increase</p>
+            </div>
+            <div class="text-center p-4 border-r border-slate-800 last:border-r-0">
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">3+</p>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Core Repositories</p>
+            </div>
+            <div class="text-center p-4">
+                <p class="text-3xl sm:text-4xl font-extrabold text-emerald-400">100%</p>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Remote Work Ready</p>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="scroll-mt-20">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-5 space-y-4">
+                    <h2 class="text-3xl font-bold tracking-tight text-white">Professional Profile</h2>
+                    <div class="h-1 w-20 bg-brand-500 rounded-full"></div>
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        I am a professional, multi-disciplinary Quality Assurance Engineer and cumulative Business Analyst. My experience ranges from developing robust automated scripts in modern testing frameworks to defining requirements, mapping software scopes, and interfacing directly with international client partners.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        Through strict adherence to Scrum guidelines, agile test life cycle configurations, and clear regression methodologies, I focus on delivering optimal product releases with zero critical downtime.
+                    </p>
+                </div>
+                <!-- Dual Capability Grid -->
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="p-6 bg-slate-800/30 border border-slate-800 rounded-xl space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-brand-500/10 flex items-center justify-center text-brand-400">
+                            <i class="fa-solid fa-vial text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">QA Engineering</h3>
+                        <p class="text-slate-400 text-sm">
+                            Developing robust automated regression frameworks, verifying back-end API structures, and ensuring seamless web experience metrics across targets.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-slate-800/30 border border-slate-800 rounded-xl space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                            <i class="fa-solid fa-briefcase text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Business Analysis</h3>
+                        <p class="text-slate-400 text-sm">
+                            Liaising with business leaders, building detailed user manuals, framing clean project scopes, and documenting accurate API payloads.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Competencies -->
+        <section id="skills" class="scroll-mt-20 space-y-8">
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Technical Ecosystem</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Selected frameworks, tools, and platforms that form my development environment.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Automation & Languages -->
+                <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-xl space-y-4">
+                    <div class="flex items-center space-x-3 text-brand-400 border-b border-slate-800 pb-3">
+                        <i class="fa-solid fa-code text-xl"></i>
+                        <h3 class="text-base sm:text-lg font-bold text-white">Automation & Languages</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Playwright</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Selenium WebDriver</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Cucumber (BDD)</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Python</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Java</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">TypeScript</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Testing & Methods -->
+                <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-xl space-y-4">
+                    <div class="flex items-center space-x-3 text-indigo-400 border-b border-slate-800 pb-3">
+                        <i class="fa-solid fa-circle-check text-xl"></i>
+                        <h3 class="text-base sm:text-lg font-bold text-white">Testing & Methodologies</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Functional Testing</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Regression Testing</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">API Testing</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Integration Testing</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Performance Testing</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">STLC</span>
+                    </div>
+                </div>
+
+                <!-- Tooling & Infrastructure -->
+                <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-xl space-y-4">
+                    <div class="flex items-center space-x-3 text-emerald-400 border-b border-slate-800 pb-3">
+                        <i class="fa-solid fa-screwdriver-wrench text-xl"></i>
+                        <h3 class="text-base sm:text-lg font-bold text-white">Tooling & Environment</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Postman</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">GitHub</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">TestRail</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Jira</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Katalon Studio</span>
+                        <span class="px-3 py-1.5 bg-slate-800 text-slate-300 rounded text-xs font-semibold">Agile Scrum / Trello</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section id="experience" class="scroll-mt-20 space-y-8">
+            <div class="space-y-2">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Career Narrative</h2>
+                <div class="h-1 w-20 bg-brand-500 rounded-full"></div>
+                <p class="text-slate-400 max-w-xl">My chronological career growth inside remote engineering squads.</p>
+            </div>
+
+            <div class="relative border-l border-slate-800 ml-4 md:ml-6 pl-6 sm:pl-8 space-y-12">
+                <!-- Node 1: Present -->
+                <div class="relative">
+                    <!-- Dot -->
+                    <span class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4.5 h-4.5 rounded-full bg-brand-500 border-4 border-[#0b1329] ring-2 ring-brand-500/20"></span>
+                    <div class="bg-slate-900/30 border border-slate-800 p-6 rounded-xl space-y-4 hover:border-brand-500/40 transition-all">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Quality Assurance Engineer | Cumulative Business Analyst</h3>
+                                <p class="text-brand-400 text-sm font-medium">Melstasoft (Pvt) Ltd Sri Lanka — Remote</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 bg-brand-500/10 text-brand-400 rounded-full text-xs font-bold uppercase self-start sm:self-center">
+                                Feb 2026 - Present
+                            </span>
+                        </div>
+                        <ul class="space-y-2.5 text-slate-400 text-sm list-disc pl-5">
+                            <li>Orchestrate functional and manual execution scripts for critical production platforms, improving standard release velocity.</li>
+                            <li>Write comprehensive user instruction manual resources, API schema documents, and test scope strategies.</li>
+                            <li>Provide key cross-functional bridging for business perspective definitions and detailed technical system outcomes.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Node 2: Associate -->
+                <div class="relative">
+                    <!-- Dot -->
+                    <span class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4.5 h-4.5 rounded-full bg-slate-600 border-4 border-[#0b1329]"></span>
+                    <div class="bg-slate-900/30 border border-slate-800 p-6 rounded-xl space-y-4 hover:border-slate-700/60 transition-all">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">Associate QA Engineer | Cumulative Business Analyst</h3>
+                                <p class="text-slate-400 text-sm font-medium">Melstasoft (Pvt) Ltd Sri Lanka — Remote</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 bg-slate-800 text-slate-400 rounded-full text-xs font-bold uppercase self-start sm:self-center">
+                                Jul 2023 - Feb 2026
+                            </span>
+                        </div>
+                        <p class="text-slate-300 text-sm italic font-medium">Key Milestone: Achieved a 50% increase in testing execution efficiency.</p>
+                        <ul class="space-y-2.5 text-slate-400 text-sm list-disc pl-5">
+                            <li>Performed rigorous API testing, functional verification, and performance assessments on complex Insurance and Commercial web applications.</li>
+                            <li>Engineered automated web browser tests using Playwright and Python web automation libraries for the Sri Lanka Insurance General Web Platform.</li>
+                            <li>Organized client requirement gatherings and internal collaborative alignment sessions with developers.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Node 3: Trainee -->
+                <div class="relative">
+                    <!-- Dot -->
+                    <span class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4.5 h-4.5 rounded-full bg-slate-800 border-4 border-[#0b1329]"></span>
+                    <div class="bg-slate-900/10 border border-slate-900 p-6 rounded-xl space-y-4">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-300">Trainee QA Engineer | Cumulative Business Analyst</h3>
+                                <p class="text-slate-500 text-sm font-medium">Melstasoft (Pvt) Ltd Sri Lanka — Remote</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 bg-slate-900 text-slate-500 rounded-full text-xs font-bold uppercase self-start sm:self-center">
+                                Jan 2023 - Jul 2023
+                            </span>
+                        </div>
+                        <ul class="space-y-2 text-slate-500 text-sm list-disc pl-5">
+                            <li>Introduced to Agile Scrum software delivery practices, defect-tracking structures, and API request schemas.</li>
+                            <li>Assisted in requirements documentation draft iterations and manual component validation checks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Projects Section -->
+        <section id="projects" class="scroll-mt-20 space-y-8">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                <div class="space-y-2">
+                    <h2 class="text-3xl font-bold tracking-tight text-white">Automation Repositories</h2>
+                    <div class="h-1 w-20 bg-brand-500 rounded-full"></div>
+                    <p class="text-slate-400 max-w-xl">Real production-ready test suites open-sourced on my GitHub profile.</p>
+                </div>
+                <div class="flex space-x-2 bg-slate-900/80 p-1 rounded-lg border border-slate-800">
+                    <button id="btn-all" onclick="filterProjects('all')" class="px-3 py-1.5 rounded-md text-xs font-semibold bg-brand-600 text-white transition-all">All</button>
+                    <button id="btn-web" onclick="filterProjects('ui')" class="px-3 py-1.5 rounded-md text-xs font-semibold text-slate-400 hover:text-white transition-all">UI Automation</button>
+                    <button id="btn-api" onclick="filterProjects('api')" class="px-3 py-1.5 rounded-md text-xs font-semibold text-slate-400 hover:text-white transition-all">API Testing</button>
+                </div>
+            </div>
+
+            <!-- Project Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="project-card bg-slate-900/40 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover:border-brand-500/50 transition-all" data-type="ui">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="p-2.5 bg-brand-500/10 text-brand-400 rounded-lg text-lg">
+                                <i class="fa-solid fa-square-check"></i>
+                            </span>
+                            <span class="text-xs font-mono text-slate-500">Playwright &bull; JS</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white group-hover:text-brand-400">Playwright Web Component Automation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            A showcase repository testing user interactive elements. Validates cross-browser stability, modern tables, state transitions, and asynchronous operations.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800/80 mt-6 flex items-center justify-between">
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-slate-800 text-slate-400 text-[10px] font-semibold rounded">Playwright</span>
+                            <span class="px-2 py-1 bg-slate-800 text-slate-400 text-[10px] font-semibold rounded">TypeScript</span>
+                        </div>
+                        <a href="https://github.com/dilsh9810/TestScripts.git" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:text-brand-300 text-sm font-semibold inline-flex items-center gap-1.5">
+                            Code <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-slate-900/40 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover:border-brand-500/50 transition-all" data-type="ui">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="p-2.5 bg-indigo-500/10 text-indigo-400 rounded-lg text-lg">
+                                <i class="fa-solid fa-globe"></i>
+                            </span>
+                            <span class="text-xs font-mono text-slate-500">Selenium &bull; Java</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Pearson Web Site Automation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Robust end-to-end framework automating production components of the Pearson system. Uses structured Page Object Models (POM) ensuring scalability.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800/80 mt-6 flex items-center justify-between">
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-slate-800 text-slate-400 text-[10px] font-semibold rounded">Selenium</span>
+                            <span class="px-2 py-1 bg-slate-800 text-slate-400 text-[10px] font-semibold rounded">Java</span>
+                        </div>
+                        <a href="https://github.com/dilsh9810/PearsonWebSiteAutomation.git" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:text-brand-300 text-sm font-semibold inline-flex items-center gap-1.5">
+                            Code <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-slate-900/40 border border-slate-800 rounded-xl p-6 flex flex-col justify-between hover:border-brand-500/50 transition-all" data-type="api">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="p-2.5 bg-emerald-500/10 text-emerald-400 rounded-lg text-lg">
+                                <i class="fa-solid fa-gears"></i>
+                            </span>
+                            <span class="text-xs font-mono text-slate-500">Postman &bull; Python</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">QA Automation API</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            API framework implementing functional requests, JSON Schema validation structure, stateful flows, and assertion parameters on core endpoints.
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800/80 mt-6 flex items-center justify-between">
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-slate-800 text-slate-400 text-[10px] font-semibold rounded">Python</span>
+                            <span class="px-2 py-1 bg-slate-800 text-slate-400 text-[10px] font-semibold rounded">API / Postman</span>
+                        </div>
+                        <a href="https://github.com/dilsh9810/qa-automation-api.git" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:text-brand-300 text-sm font-semibold inline-flex items-center gap-1.5">
+                            Code <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Server Control & Live QA Automation Hub -->
+        <section id="deployment" class="scroll-mt-20 bg-slate-900/50 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                    <span class="text-xs font-bold text-brand-400 uppercase tracking-widest block mb-1">Live Server Hosting & Monitoring Panel</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">Continuous Deployment Sandbox</h2>
+                    <p class="text-slate-400 text-sm max-w-xl mt-1">Simulate live hosting nodes and run actual visual automated validation tests verifying the architecture.</p>
+                </div>
+                <!-- Dynamic Location Selector -->
+                <div class="flex flex-wrap gap-2 bg-slate-950/80 p-1.5 rounded-xl border border-slate-800 self-start md:self-center">
+                    <button onclick="changeHostNode('CMB')" id="node-cmb" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-brand-600 text-white transition-all">Colombo Node</button>
+                    <button onclick="changeHostNode('SG')" id="node-sg" class="px-3 py-1.5 text-xs font-semibold rounded-lg text-slate-400 hover:text-white transition-all">Singapore (AWS)</button>
+                    <button onclick="changeHostNode('US')" id="node-us" class="px-3 py-1.5 text-xs font-semibold rounded-lg text-slate-400 hover:text-white transition-all">US-East (Edge)</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-2">
+                <!-- System Diagnostics (Left Side) -->
+                <div class="lg:col-span-4 space-y-4">
+                    <div class="bg-slate-950/40 border border-slate-800/80 p-5 rounded-xl space-y-4">
+                        <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                            <span class="text-xs text-slate-400 font-medium">Server Node Location</span>
+                            <span id="active-node-badge" class="text-xs text-brand-400 font-mono font-bold uppercase">Colombo (CMB-01)</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-slate-900/40 p-3 rounded-lg border border-slate-800">
+                                <span class="text-[10px] text-slate-500 block uppercase font-bold">Latency</span>
+                                <span id="server-latency" class="text-lg font-bold font-mono text-emerald-400">12ms</span>
+                            </div>
+                            <div class="bg-slate-900/40 p-3 rounded-lg border border-slate-800">
+                                <span class="text-[10px] text-slate-500 block uppercase font-bold">Uptime Target</span>
+                                <span class="text-lg font-bold font-mono text-brand-400">100%</span>
+                            </div>
+                            <div class="bg-slate-900/40 p-3 rounded-lg border border-slate-800">
+                                <span class="text-[10px] text-slate-500 block uppercase font-bold">Protocol</span>
+                                <span class="text-sm font-bold font-mono text-indigo-400">HTTP/3 QUIC</span>
+                            </div>
+                            <div class="bg-slate-900/40 p-3 rounded-lg border border-slate-800">
+                                <span class="text-[10px] text-slate-500 block uppercase font-bold">Resume Verification</span>
+                                <span class="text-xs font-bold font-mono text-amber-400">PDF Bound</span>
+                            </div>
+                        </div>
+                        <div class="bg-slate-900/30 border border-slate-800/60 p-3 rounded-lg flex items-center justify-between text-xs">
+                            <span class="text-slate-400">Local Service Gateway:</span>
+                            <span class="text-emerald-400 font-mono font-bold flex items-center gap-1.5">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> ONLINE
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive QA Script Runner Terminal (Right Side) -->
+                <div class="lg:col-span-8 flex flex-col bg-slate-950 border border-slate-800 rounded-xl overflow-hidden shadow-2xl">
+                    <div class="bg-slate-900 border-b border-slate-800 px-4 py-3 flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                            <span class="text-xs font-mono text-slate-400 ml-2">playwright-runner.sh</span>
+                        </div>
+                        <button onclick="triggerAutomatedSuite()" id="run-test-btn" class="px-4 py-1.5 bg-brand-600 hover:bg-brand-500 text-white font-mono text-xs font-bold rounded-lg transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-circle-play"></i> Run Regression Tests
+                        </button>
+                    </div>
+                    <!-- Terminal Output Terminal -->
+                    <div class="p-4 flex-grow font-mono text-xs sm:text-sm text-slate-300 min-h-[220px] max-h-[300px] overflow-y-auto space-y-1 bg-[#050b18]" id="terminal-screen">
+                        <p class="text-slate-500">// Welcome to Dilshika's Continuous QA Sandbox.</p>
+                        <p class="text-slate-500">// Select a target node above or trigger a live Playwright automation run below.</p>
+                        <p class="text-slate-300 mt-2"><span class="text-emerald-400">dilshika@melstasoft-remote:~$</span> <span id="command-typing">await server.verify("active-instance");</span></p>
+                        <div id="live-terminal-logs" class="space-y-1 pt-2">
+                            <p class="text-slate-400">Node Status Check: <span class="text-emerald-400">[SUCCESS]</span> Core interface loaded inside 12ms.</p>
+                            <p class="text-slate-400">Asset Bundle Status: Verified "Dilshika_Netthikumarage_Resume.pdf" target source link.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Remote Readiness Dashboard -->
+        <section id="remote-readiness" class="scroll-mt-20 bg-gradient-to-br from-slate-900/60 to-slate-950/60 border border-slate-800/80 rounded-2xl p-8 space-y-8 backdrop-blur">
+            <div class="space-y-2">
+                <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider block">Operational Guarantee</span>
+                <h2 class="text-3xl font-bold tracking-tight text-white">Remote Office Infrastructure</h2>
+                <div class="h-1 w-20 bg-brand-500 rounded-full"></div>
+                <p class="text-slate-400">Fully equipped for global collaborative software engineering, maintaining a 100% stable remote ecosystem.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+                <div class="flex gap-4 items-start">
+                    <div class="p-3 bg-brand-500/10 text-brand-400 rounded-xl">
+                        <i class="fa-solid fa-wifi text-xl"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="text-white font-bold text-base">High-Speed Fiber</h4>
+                        <p class="text-slate-400 text-sm">Primary 100 Mbps fiber setup backed by redundant 4G mobile hotspots.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="p-3 bg-emerald-500/10 text-emerald-400 rounded-xl">
+                        <i class="fa-solid fa-charging-station text-xl"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="text-white font-bold text-base">Uninterrupted Power</h4>
+                        <p class="text-slate-400 text-sm">Inverter / UPS system delivering 24-hour backup guarantees.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="p-3 bg-indigo-500/10 text-indigo-400 rounded-xl">
+                        <i class="fa-solid fa-clock-rotate-left text-xl"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="text-white font-bold text-base">Asynchronous Flow</h4>
+                        <p class="text-slate-400 text-sm">Excellent English and asynchronous habits configured for international operations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section id="education" class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Education Column -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <i class="fa-solid fa-graduation-cap text-brand-400"></i> Education
+                </h3>
+                <div class="space-y-4">
+                    <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl space-y-2">
+                        <div class="flex justify-between items-start gap-4">
+                            <h4 class="text-white font-bold text-base">Postgraduate Diploma in Artificial Intelligence <span class="text-brand-400 text-xs font-normal">(Reading)</span></h4>
+                            <span class="text-xs text-slate-400 font-medium whitespace-nowrap">2025 - 2026</span>
+                        </div>
+                        <p class="text-slate-400 text-sm">University of Moratuwa — Sri Lanka</p>
+                    </div>
+                    <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl space-y-2">
+                        <div class="flex justify-between items-start gap-4">
+                            <h4 class="text-white font-bold text-base">Bachelor of Information Technology</h4>
+                            <span class="text-xs text-slate-400 font-medium whitespace-nowrap">2018 - 2022</span>
+                        </div>
+                        <p class="text-slate-400 text-sm">Sri Lanka Institute of Information Technology (SLIIT)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications Column -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <i class="fa-solid fa-award text-brand-400"></i> Professional Accreditation
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl flex items-center gap-4">
+                        <i class="fa-solid fa-shield-halved text-brand-400 text-2xl shrink-0"></i>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">ISTQB Certified</h4>
+                            <p class="text-slate-500 text-xs">Foundation Level (CTFL)</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl flex items-center gap-4">
+                        <i class="fa-solid fa-bolt text-brand-400 text-2xl shrink-0"></i>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Playwright Web</h4>
+                            <p class="text-slate-500 text-xs">Web Browser Automation Core</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-mt-20 border-t border-slate-800 pt-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-4">
+                    <h2 class="text-3xl font-bold tracking-tight text-white">Get in Touch</h2>
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                        I am currently accepting inquiries regarding remote positions, technical QA roles, or BA alignment opportunities. Feel free to contact me directly using any of the available communication channels.
+                    </p>
+                    <!-- Communication Points -->
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center space-x-3.5 text-slate-400">
+                            <i class="fa-solid fa-phone text-brand-400 text-base"></i>
+                            <span class="text-sm">+94 756 864 835 / +94 717 699 439</span>
+                        </div>
+                        <div class="flex items-center space-x-3.5 text-slate-400">
+                            <i class="fa-solid fa-location-dot text-brand-400 text-base"></i>
+                            <span class="text-sm">Colombo, Sri Lanka (Fully Remote Active)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Interactive Action Contacts -->
+                <div class="lg:col-span-7 bg-slate-900/30 border border-slate-800 p-6 sm:p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-white mb-2">Connect via External Platforms</h3>
+                        <p class="text-slate-400 text-sm mb-6">Explore my public records, certification pathways, or connect for instant technical discussions.</p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <a href="https://www.linkedin.com/in/dilshika-netthikumarage-b52243195/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 bg-slate-800/40 border border-slate-700/50 hover:border-brand-500 rounded-xl transition-all group">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fab fa-linkedin text-brand-400 text-xl"></i>
+                                    <div>
+                                        <p class="text-white font-semibold text-sm">LinkedIn Network</p>
+                                        <p class="text-slate-500 text-xs">Professional profile</p>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-slate-600 group-hover:text-white text-xs transition-colors"></i>
+                            </a>
+                            <a href="https://github.com/dilsh9810" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 bg-slate-800/40 border border-slate-700/50 hover:border-brand-500 rounded-xl transition-all group">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fab fa-github text-slate-300 text-xl"></i>
+                                    <div>
+                                        <p class="text-white font-semibold text-sm">GitHub Portfolios</p>
+                                        <p class="text-slate-500 text-xs">Automation scripts</p>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-slate-600 group-hover:text-white text-xs transition-colors"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border-t border-slate-800 pt-6 mt-6 flex justify-between items-center text-xs text-slate-500">
+                        <span>Available for EST/GMT/APAC alignments.</span>
+                        <span class="text-brand-400 font-semibold flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span> Always On
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-[#070d1d] py-8 text-center text-xs text-slate-500">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Dilshika Netthikumarage. All rights reserved.</p>
+            <p>Designed as an interactive, production-grade DevOps-simulated portfolio.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interactive Functionality -->
+    <script>
+        // Project Filtering System
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const btns = {
+                all: document.getElementById('btn-all'),
+                ui: document.getElementById('btn-web'),
+                api: document.getElementById('btn-api')
+            };
+
+            // Reset buttons active state
+            Object.values(btns).forEach(btn => {
+                if(btn) {
+                    btn.classList.remove('bg-brand-600', 'text-white');
+                    btn.classList.add('text-slate-400', 'hover:text-white');
+                }
+            });
+
+            // Set active button
+            if(btns[category]) {
+                btns[category].classList.add('bg-brand-600', 'text-white');
+                btns[category].classList.remove('text-slate-400', 'hover:text-white');
+            }
+
+            // Filter cards
+            cards.forEach(card => {
+                const cardType = card.getAttribute('data-type');
+                if (category === 'all' || cardType === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Live Server Diagnostics simulation
+        let latencyRange = [8, 15]; // Colombo default range in ms
+        const latencyElement = document.getElementById('server-latency');
+
+        setInterval(() => {
+            // Randomize slight fluctuations in ping latency to represent actual network health
+            const baseVal = Math.floor(Math.random() * (latencyRange[1] - latencyRange[0] + 1)) + latencyRange[0];
+            latencyElement.textContent = `${baseVal}ms`;
+        }, 3000);
+
+        function changeHostNode(node) {
+            const btnCmb = document.getElementById('node-cmb');
+            const btnSg = document.getElementById('node-sg');
+            const btnUs = document.getElementById('node-us');
+            const badge = document.getElementById('active-node-badge');
+            const term = document.getElementById('live-terminal-logs');
+
+            // Reset selection style
+            [btnCmb, btnSg, btnUs].forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white');
+                btn.classList.add('text-slate-400', 'hover:text-white');
+            });
+
+            const timestamp = new Date().toISOString().split('T')[1].slice(0, 8);
+
+            if (node === 'CMB') {
+                btnCmb.classList.add('bg-brand-600', 'text-white');
+                latencyRange = [8, 16];
+                badge.textContent = "Colombo (CMB-01)";
+                term.insertAdjacentHTML('beforeend', `<p class="text-indigo-400">[${timestamp}] Switched Gateway to Core Colombo Host (Minimal latency gateway).</p>`);
+            } else if (node === 'SG') {
+                btnSg.classList.add('bg-brand-600', 'text-white');
+                latencyRange = [32, 45];
+                badge.textContent = "Singapore AWS (AP-SOUTHEAST)";
+                term.insertAdjacentHTML('beforeend', `<p class="text-indigo-400">[${timestamp}] Switched Host Node: Singapore AP-Southeast Active Gateway.</p>`);
+            } else if (node === 'US') {
+                btnUs.classList.add('bg-brand-600', 'text-white');
+                latencyRange = [180, 220];
+                badge.textContent = "US-East Edge Node";
+                term.insertAdjacentHTML('beforeend', `<p class="text-indigo-400">[${timestamp}] Gateway Routing redirected to North Virginia US-East datacenter.</p>`);
+            }
+        }
+
+        // Playwright Automation Runner Simulation
+        let terminalRunning = false;
+
+        function triggerAutomatedSuite() {
+            if (terminalRunning) return;
+            terminalRunning = true;
+
+            const term = document.getElementById('terminal-screen');
+            const runBtn = document.getElementById('run-test-btn');
+            
+            runBtn.disabled = true;
+            runBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Running Tests...`;
+            
+            // Clear current logs inside console screen
+            term.innerHTML = `
+                <p class="text-slate-500">// Triggering Playwright regression framework...</p>
+                <p class="text-slate-300"><span class="text-emerald-400">dilshika@melstasoft-remote:~$</span> npx playwright test --project=all-viewports</p>
+            `;
+
+            const testLogs = [
+                { text: "Running 5 tests using 3 concurrent workers...", color: "text-slate-400", delay: 600 },
+                { text: "✓ [chromium] › index.html:5:3 › Verify Navigation Menu (180ms)", color: "text-emerald-400", delay: 1200 },
+                { text: "✓ [firefox]  › index.html:12:3 › Validate Responsive Layout (310ms)", color: "text-emerald-400", delay: 1800 },
+                { text: "✓ [webkit]   › index.html:22:3 › Check Mobile Navigation & Viewport Scaling (250ms)", color: "text-emerald-400", delay: 2400 },
+                { text: "✓ [chromium] › index.html:30:3 › Test Remote Readiness Indicators (115ms)", color: "text-emerald-400", delay: 3000 },
+                { text: "✓ [chromium] › index.html:45:5 › Confirm 'Dilshika_Netthikumarage_Resume.pdf' Target Download Integrity (90ms)", color: "text-emerald-400", delay: 3600 },
+                { text: "--------------------------------------------------------", color: "text-slate-600", delay: 4000 },
+                { text: "TEST RESULT: 5 passed (1.43s total execution time)", color: "text-green-300 font-bold", delay: 4400 },
+                { text: "Reports uploaded to Playwright Test Dash. System healthy.", color: "text-brand-400", delay: 4800 }
+            ];
+
+            testLogs.forEach(log => {
+                setTimeout(() => {
+                    term.insertAdjacentHTML('beforeend', `<p class="${log.color}">${log.text}</p>`);
+                    term.scrollTop = term.scrollHeight; // Auto-scroll down
+                }, log.delay);
+            });
+
+            // Restore action button after tests complete
+            setTimeout(() => {
+                runBtn.disabled = false;
+                runBtn.innerHTML = `<i class="fa-solid fa-circle-play"></i> Run Regression Tests`;
+                terminalRunning = false;
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
